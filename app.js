@@ -342,7 +342,7 @@ function file_video(path) {
   let fileName = url.substr(url.lastIndexOf("/"));
   let fileName1 = url.substring(url.lastIndexOf("/"),url.lastIndexOf("."));
   hlsUrl = urlPath + "/hls" + fileName + "/index.m3u8";
-  subtitleurl = urlPath + fileName1 + ".webvtt";
+  subtitleurl = urlPath + fileName1 + ".vtt";
   const dp = new DPlayer({
     container: document.getElementById("dplayer"),
     video: {

@@ -2,7 +2,7 @@ var authConfig = {
     "siteName": "GoIndex", // 网站名称
     "siteIcon": "", // 网站图标
     "root_pass": "",  // 根目录密码，优先于.password
-    "version": "1.1.7", // 程序版本
+    "version": "1.0", // 程序版本
     "theme": "classic", // material  classic
     "client_id": "",
     "client_secret": "",
@@ -21,7 +21,7 @@ var html = `
   <title>${authConfig.siteName}</title>
   <link rel="shortcut icon" href="${authConfig.siteIcon}" type="image/x-icon" />
 <!--  <script src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script> -->
-  <script src="//cdn.jsdelivr.net/gh/unkaer/goIndex-theme-nexmoe@${authConfig.siteIcon}/app.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/unkaer/goIndex@master/app.js"></script>
 </head>
 <body>
 </body>

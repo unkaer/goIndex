@@ -340,7 +340,9 @@ function file_video(path) {
 
   let urlPath = url.substring(0, url.lastIndexOf("/"));
   let fileName = url.substr(url.lastIndexOf("/"));
+  let fileName1 = url.substring(url.lastIndexOf("/"),url.lastIndexOf("."));
   hlsUrl = urlPath + "/hls" + fileName + "/index.m3u8";
+  subtitleurl = urlPath + fileName1 + ".webvtt";
   const dp = new DPlayer({
     container: document.getElementById("dplayer"),
     video: {
@@ -358,6 +360,13 @@ function file_video(path) {
       ],
       autoplay: true,
       defaultQuality: 0
+    },
+    subtitle: {
+      url: subtitleurl,
+      type: 'webvtt',
+      fontSize: '25px',
+      bottom: '10%',
+      color: '#b7daff',
     }
   });
 }

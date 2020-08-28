@@ -240,7 +240,7 @@ function file(path) {
     return file_code(path);
   }
 
-  if ("|mp4|webm|mkv|flv|".indexOf(`|${ext}|`) >= 0) {
+  if ("|mp4|webm|mkv|flv|wmv|".indexOf(`|${ext}|`) >= 0) {
     return file_video(path);
   }
 

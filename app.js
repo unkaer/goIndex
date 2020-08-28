@@ -194,7 +194,7 @@ function list_files(path, files) {
       }
       var ext = p.split(".").pop();
       if (
-        "|html|php|css|go|java|js|json|txt|sh|md|mp4|webm|mkv|bmp|jpg|jpeg|png|gif|wav|mp3|ogg|acc|webm|".indexOf(
+        "|html|php|css|go|java|js|json|txt|sh|md|mp4|webm|mkv|bmp|jpg|jpeg|png|gif|wav|mp3|ogg|acc|wmv|".indexOf(
           `|${ext}|`.toLowerCase()
         ) >= 0
       ) {
@@ -244,7 +244,7 @@ function file(path) {
     return file_video(path);
   }
 
-  if ("|wav|mp3|ogg|acc|webm|".indexOf(`|${ext}|`) >= 0) {
+  if ("|wav|mp3|ogg|acc|".indexOf(`|${ext}|`) >= 0) {
     return file_audio(path);
   }
 
